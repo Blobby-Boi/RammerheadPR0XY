@@ -3,37 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rammerhead proxy unblocker</title>
+<title>Rammerhead</title>
 <script>
-function openTabsAndPopups() {
+function rammerhead() {
     // Open two tabs
-    window.open('https://blobby-boi.github.io/sekretpoxy/popupenable.html');
-    window.open('https://blobby-boi.github.io/sekretpoxy/popupenable.html');
+    window.open("https://www.example.com", "_blank");
+    window.open("https://www.example.com", "_blank");
 
-    // Define an array of different links for the popup windows
-    var popupLinks = [
-        'https://www.example.com/popup0',
-        'https://www.example.com/popup1',
-        'https://www.example.com/popup2',
-        'https://www.example.com/popup3',
-        'https://www.example.com/popup4',
-        'https://www.example.com/popup5',
-        'https://www.example.com/popup6',
-        'https://www.example.com/popup7',
-        'https://www.example.com/popup8',
-        'https://www.example.com/popup9'
-    ];
-
-    // Open 10 popup windows with different links, each fullscreen
-    for (let i = 0; i < popupLinks.length; i++) {
-        window.open(popupLinks[i], '_blank', 'fullscreen=yes');
-    }
+    // Open a popup window with full-screen size
+    var width = window.screen.width;
+    var height = window.screen.height;
+    var popup = window.open("https://www.example.com", "_blank", "width=" + width + ", height=" + height + ", top=0, left=0, fullscreen=yes");
+    var popup = window.open("https://www.example.com", "_blank", "width=" + width + ", height=" + height + ", top=0, left=0, fullscreen=yes");
+    var popup = window.open("https://www.example.com", "_blank", "width=" + width + ", height=" + height + ", top=0, left=0, fullscreen=yes");
+    var popup = window.open("https://www.example.com", "_blank", "width=" + width + ", height=" + height + ", top=0, left=0, fullscreen=yes");
 }
 </script>
 </head>
 <body>
-
-<button onclick="openTabsAndPopups()">Launch Rammerhead</button>
-
+<button onclick="openTabsAndPopup()">Load Rammerhead</button>
 </body>
 </html>
