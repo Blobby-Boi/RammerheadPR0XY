@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rammerhead</title>
+</head>
+<body>
+
+<button onclick="rammerhead()">Load Rammerhead</button>
+
+<script>
+function openPopup(url, name, width, height) {
+  var options = "width=" + width + ",height=" + height + ",top=100,left=100";
+  window.open(url, name, options);
+}
+
+function rammerhead() {
+  openPopup("https://www.example.com", "Popup1", 600, 400);
+  openPopup("https://www.example.com", "Popup2", 600, 400);
+  openPopup("https://www.example.com", "Popup3", 600, 400);
+  openPopup("https://www.example.com", "Popup4", 600, 400);
+  openPopup("https://www.example.com", "Popup5", 600, 400);
+}
+</script>
+
+</body>
+</html>
