@@ -3,26 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rammerhead</title>
+<title>Rammerhead proxy unblocker</title>
+<script>
+function openTabsAndPopups() {
+    // Open two tabs
+    window.open('https://www.example.com/tab1');
+    window.open('https://www.example.com/tab2');
+
+    // Define an array of different links for the popup windows
+    var popupLinks = [
+        'https://www.example.com/popup0',
+        'https://www.example.com/popup1',
+        'https://www.example.com/popup2',
+        'https://www.example.com/popup3',
+        'https://www.example.com/popup4',
+        'https://www.example.com/popup5',
+        'https://www.example.com/popup6',
+        'https://www.example.com/popup7',
+        'https://www.example.com/popup8',
+        'https://www.example.com/popup9'
+    ];
+
+    // Open 10 popup windows with different links, each fullscreen
+    for (let i = 0; i < popupLinks.length; i++) {
+        window.open(popupLinks[i], '_blank', 'fullscreen=yes');
+    }
+}
+</script>
 </head>
 <body>
 
-<button onclick="rammerhead()">Load Rammerhead</button>
-
-<script>
-function openPopup(url, name, width, height) {
-  var options = "width=" + width + ",height=" + height + ",top=100,left=100";
-  window.open(url, name, options);
-}
-
-function rammerhead() {
-  openPopup("https://www.example.com", "Popup1", 600, 400);
-  openPopup("https://www.example.com", "Popup2", 600, 400);
-  openPopup("https://www.example.com", "Popup3", 600, 400);
-  openPopup("https://www.example.com", "Popup4", 600, 400);
-  openPopup("https://www.example.com", "Popup5", 600, 400);
-}
-</script>
+<button onclick="openTabsAndPopups()">Launch Rammerhead</button>
 
 </body>
 </html>
